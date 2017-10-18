@@ -43,7 +43,7 @@ DIR_GUARD		 = mkdir -pv $(@D)
 #-----------------------------------------------------------------------
 
 .PHONY: all
-all: static_library
+all: shared_library static_library main test_exe
 
 main: $(EXEC_FILE)
 $(EXEC_FILE): $(OBJ)
